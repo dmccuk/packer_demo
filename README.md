@@ -121,9 +121,9 @@ us-east-1: ami-078042f4aa5654a94
 
 Let build with our new AMI image and see if it worked!
 
-•	So just a straight build in the AWS console (search for you AMI-ID). This could just as easily be built using Terraform.
-•	Make sure that for the demo, you open up port 80 for all incoming connections.
-•	Once the VM is up, hit the IP address in a browser. Be prepared for webpage retro heaven 😊
+  * So just a straight build in the AWS console (search for you AMI-ID). This could just as easily be built using Terraform.
+  * Make sure that for the demo, you open up port 80 for all incoming connections.
+  * Once the VM is up, hit the IP address in a browser. Be prepared for webpage retro heaven 😊
 
 That’s it.
 
@@ -137,7 +137,3 @@ https://www.packer.io/intro/getting-started/build-image.html#managing-the-image
 
 Follow us on Linkedin:
 https://www.linkedin.com/company/londoniac
-
-
-
-
