@@ -30,6 +30,8 @@ Available commands are:
     inspect     see components of a template
     validate    check that a template is valid
     version     Prints the Packer version
+
+$ git clone 
 ````
 
 ## example .json file
