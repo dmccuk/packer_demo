@@ -31,7 +31,24 @@ Available commands are:
     validate    check that a template is valid
     version     Prints the Packer version
 
-$ git clone 
+$ git clone https://github.com/dmccuk/packer_demo.git
+Cloning into 'packer_demo'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 17 (delta 4), reused 7 (delta 1), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+Checking connectivity... done.
+
+$ cd packer_demo/
+$ ls -al
+total 28
+drwxrwxr-x 3 vagrant vagrant 4096 Feb  5 15:42 .
+drwxrwxr-x 3 vagrant vagrant 4096 Feb  5 15:42 ..
+-rw-rw-r-- 1 vagrant vagrant  211 Feb  5 15:42 example.sh
+drwxrwxr-x 8 vagrant vagrant 4096 Feb  5 15:42 .git
+-rw-rw-r-- 1 vagrant vagrant 1153 Feb  5 15:42 image1.json
+-rw-rw-r-- 1 vagrant vagrant 4353 Feb  5 15:42 README.md
 ````
 
 ## example .json file
