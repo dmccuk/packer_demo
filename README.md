@@ -54,7 +54,7 @@ drwxrwxr-x 8 vagrant vagrant 4096 Feb  5 15:42 .git
 ## example .json file
 in this file, make the following changes:
 
- * change the region to the one you want to use. (I.E. eu-west-2"
+ * change the region to the one you want to use. (I.E. eu-west-2)
  * Base image is for Ubuntu 18.04 Bionic. Feel free to change this if you want to
 
 
