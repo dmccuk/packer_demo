@@ -52,6 +52,11 @@ drwxrwxr-x 8 vagrant vagrant 4096 Feb  5 15:42 .git
 ````
 
 ## example .json file
+in this file, make the following changes:
+
+ * change the region to the one you want to use. (I.E. eu-west-2"
+ * Base image is for Ubuntu 18.04 Bionic. Feel free to change this if you want to
+
 
 Create a file called images1.json and copy the contents below into it:
 
@@ -72,7 +77,7 @@ Create a file called images1.json and copy the contents below into it:
             "source_ami_filter": {
               "filters": {
               "virtualization-type": "hvm",
-              "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
+              "name": "ubuntu/images/*ubuntu-bionic-18.04-amd64-server-*",
               "root-device-type": "ebs"
               },
               "owners": ["099720109477"],
@@ -98,11 +103,6 @@ Create a file called images1.json and copy the contents below into it:
 }
 ````
 
-  * Update the region (default is eu-east-1)
-  * Give it a base AMI image name. Default is ubuntu Xenial:
-    * ("name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",)
-  * Enter the AWS keys or just use awscli to manage them for you.
-
 ## Build script
 
 Create a file called example.sh with this contents:
@@ -111,13 +111,16 @@ Create a file called example.sh with this contents:
 #!/bin/bash
 set -x # see all output
 
-#!/bin/bash
-set -x # see all output
-
 # upgrade step
 sudo apt update -yq # update the repos
 sudo DEBIAN_FRONTEND=noninteractive apt upgrade -yq # upgrade the OS
 sudo apt install wget curl git python3-minimal -yq
+````
+## Validate the file
+
+````
+$ packer validate image1.json
+Template validated successfully.
 ````
 
 ## First build
