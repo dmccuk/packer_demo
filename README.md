@@ -103,6 +103,12 @@ Create a file called images1.json and copy the contents below into it:
 }
 ````
 
+  * If you want to build a ubuntu 16.04 server, replace the name with this:
+
+`````
+     "name": "ubuntu/images/*ubuntu-xenial-16.04-amd64-server-*",
+`````
+
 ## Build script
 
 Create a file called example.sh with this contents:
