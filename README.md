@@ -58,7 +58,7 @@ in this file, make the following changes:
  * Base image is for Ubuntu 18.04 Bionic. Feel free to change this if you want to
 
 
-Create a file called images1.json and copy the contents below into it:
+Edit the file called image1.json and copy the contents below into it:
 
 ````
 {
