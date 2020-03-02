@@ -52,20 +52,20 @@ drwxrwxr-x 8 vagrant vagrant 4096 Feb  5 15:42 .git
 ````
 
 ## example .json file
-in this file, make the following changes:
+In this file, make the following changes:
 
- * change the region to the one you want to use. (I.E. eu-west-2)
- * Base image is for Ubuntu 18.04 Bionic. Feel free to change this if you want to
+ *  **Change the region to eu-central-1**
+ * The Base image is for **Ubuntu 18.04 Bionic.** Feel free to change this if you want to. See the option for using Ubunutu 16.04 under the image1.json output below:
 
 
-Edit the file called image1.json and copy the contents below into it:
+Edit the file called **image1.json** and check the contents:
 
 ````
 {
     "variables": {
         "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
-        "region":         "us-east-1"
+        "region":         "eu-central-1"
     },
     "builders": [
         {
