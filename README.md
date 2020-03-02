@@ -111,7 +111,7 @@ Edit the file called **image1.json** and check the contents:
 
 ## Build script
 
-Create a file called example.sh with this contents:
+Check this file called example.sh. Here is the contents:
 
 ````
 #!/bin/bash
