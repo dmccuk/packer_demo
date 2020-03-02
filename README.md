@@ -142,7 +142,7 @@ Check the output. At the end you should see something like this:
 ````
 ==> Builds finished. The artifacts of successful builds are:
 --> amazon-ebs: AMIs were created:
-us-east-1: ami-078042f4aa5654a94
+eu-central-1: ami-078042f4aa5654a94
 ````
 
 Let build with our new AMI image and see if it worked!
