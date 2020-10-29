@@ -6,13 +6,13 @@ Follow along to create your own AMI image in EC2.
  
  ## Requirements:
 
- * install awscli and use this to hold you AWS ACCESS & SECRET keys
+ * Install awscli and use this to hold you AWS ACCESS & SECRET keys
  * You'll need to install Packer (https://www.packer.io/downloads.html)
  * This demo was performed on a Ubuntu 18.04.3 LTS
  * Linux packages required (install these): git wget unzip
  * Clone the REPO: git clone https://github.com/dmccuk/packer_demo.git
 
-## commands:
+## Follow these Commands:
 ````
 Commands:
 $ mkdir packer
@@ -54,7 +54,7 @@ drwxrwxr-x 8 vagrant vagrant 4096 Feb  5 15:42 .git
 ## example .json file
 In this file, make the following changes:
 
- *  **Change the region to eu-central-1**
+ *  **Change the region to eu-west-1**
  * The Base image is for **Ubuntu 18.04 Bionic.** Feel free to change this if you want to. See the option for using Ubunutu 16.04 under the image1.json output below:
 
 
@@ -65,7 +65,7 @@ Edit the file called **image1.json** and check the contents:
     "variables": {
         "aws_access_key": "{{env `AWS_ACCESS_KEY_ID`}}",
         "aws_secret_key": "{{env `AWS_SECRET_ACCESS_KEY`}}",
-        "region":         "eu-central-1"
+        "region":         "eu-west-1"
     },
     "builders": [
         {
@@ -129,7 +129,7 @@ $ packer validate image1.json
 Template validated successfully.
 ````
 
-## First build
+## Build your New AMI
 
 Now all we need to do is run the following command:
 
@@ -142,10 +142,10 @@ Check the output. At the end you should see something like this:
 ````
 ==> Builds finished. The artifacts of successful builds are:
 --> amazon-ebs: AMIs were created:
-eu-central-1: ami-078042f4aa5654a94
+eu-west-1: ami-078042f4aa5654a94
 ````
 
-Let build with our new AMI image and see if it worked!
+Lets build with our new AMI image and see if it worked!
 
   * So just a straight build in the AWS console (search for you AMI-ID). This could just as easily be built using Terraform.
 
